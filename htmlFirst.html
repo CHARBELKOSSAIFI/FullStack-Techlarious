@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHLARIOUS</title>
+    <style type="text/css">
+        
+            label {
+                width: 100px;
+                /* display: inline-block; */
+                display:inline-flex;
+                padding-left: 100px;
+                padding-right: 10px;
+                
+            }
+            
+           table{
+            border: 1px solid wheat;
+            border-collapse: collapse;
+            
+           }
+           th,td{
+            padding: 10px;
+           }
+       .formleft{
+        float: left;
+        width: 30%;
+       }
+       .formrright{
+        float: right;
+        width: 30%;
+        
+       }
+       .button{
+        float: right;
+        width: 60%;
+       }
+    </style>
+</head>
+<body>
+    <div id="allform">
+    <div id="form">
+        <form action="">
+            <label for="fname"><b> Customer: </b> </label>
+            <input type="text" id="fname" name="fname" placeholder="Bon app'">
+            <label for="adress"><b> Adress: </b> </label>
+            <input type="text" id="adress" name="adress" placeholder="Lebanon">
+            
+            <br><br>
+            <label for="employee"><b> Employee: </b> </label>
+            <input type="text" id="emp" name="employee" placeholder="Peecock'">
+            <label for="city"><b> City: </b> </label>
+            <input type="text" id="city" name="city" placeholder="Bon app'">
+            <br><br>
+            <label for="odate"><b> Order Date: </b> </label>
+            <input type="date" id="odate" name="odate" placeholder="5/4/444'">
+            <label for="Region"><b> Region: </b> </label>
+            <input type="text" id="Region" name="Region">
+            <br><br>
+            <label for="rdate"><b> Requierd Date: </b> </label>
+            <input type="date" id="rdate" name="rdate" placeholder="6/4/7788">
+            <label for="Postal"><b> Postal Code: </b> </label>
+            <input type="text" id="Postal" name="Postal">
+            <br><br>
+            <label for="sdate"><b> Shipped Date: </b> </label>
+            <input type="date" id="sdate" name="sdate">
+            <label for="Ship"><b> Ship Couny: </b> </label>
+            <input type="text" id="Ship" name="Ship">
+        </form>
+        
+        
+    </div>
+</div>
+<br><br><br>
+
+<div id="table">
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Discount</th>
+            <th>Product name</th>
+            <th>Product Supplier name</th>
+            <th>Extended Price</th>
+        
+        </tr>
+        <tr>
+            <td> grandma...</td>
+            <td> 25$</td>
+            <td> 20</td>
+            <td> 25.00%</td>
+            <td> condiments</td>
+            <td> grandma kellys</td>
+            <td> 375.00$</td>
+
+
+        </tr>
+        <tr>
+            <td> grandma...</td>
+            <td> 25$</td>
+            <td> 20</td>
+            <td> 25.00%</td>
+            <td> condiments</td>
+            <td> grandma kellys</td>
+            <td> 375.00$</td>
+
+
+        </tr>
+        <tr>
+            <td> grandma...</td>
+            <td> 25$</td>
+            <td> 20</td>
+            <td> 25.00%</td>
+            <td> condiments</td>
+            <td> grandma kellys</td>
+            <td> 375.00$</td>
+
+
+        </tr>
+    </table>
+</div>
+<br><br><br>
+
+<div class="formleft">
+    <form action="">
+        <label for="sname"><b> ShipName: </b> </label>
+        <input type="text" id="sname" name="sname" placeholder="Bon app'">
+       
+        <br><br>
+            <label for="svia"><b> shipvia: </b> </label><br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="united package"></option>
+                <option value="united package"></option>
+                <option value="united package"></option>
+            </datalist>
+            <br>
+            <br><br>
+           
+    </form>
+  
+</div>
+
+<div class="formright">
+<form action="">
+    <label for="stotal"><b> SubTotal: </b> </label>
+    <input type="text" id="stotal" name="stotal">
+    <br><br>
+    <label for="freight"><b> Freight: </b> </label>
+    <input type="text" id="freight" name="freight">
+    <br><br>
+    <label for="total"><b> Total: </b> </label>
+    <input type="text" id="total" name="total">
+   
+</form>
+</div>
+    <br>
+    <hr>
+    
+<footer id="footer">
+    <div class="button">
+        <button> ok</button>
+        <button> Delete</button>
+        <button> cancel</button>
+    </div>
+
+    
+
+</footer>
+   
+
+
+    
+</body>
+</html>
