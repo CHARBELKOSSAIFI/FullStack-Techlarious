@@ -7,38 +7,88 @@
     <title>TECHLARIOUS</title>
     <style type="text/css">
         
-            label {
-                width: 100px;
-                /* display: inline-block; */
-                display:inline-flex;
-                padding-left: 100px;
-                padding-right: 10px;
+        label,input {
+                 width: 150px; 
+                /* display: flex;
+                justify-content: space-between; */
+                  display: inline-block;  
+                 display:inline-flex;  
+                 padding-left: 100px;
+                padding-right: 10px; 
+                
                 
             }
             
            table{
             border: 1px solid wheat;
             border-collapse: collapse;
+            margin-left: 5%;
+            display: grid;
+            /* grid-template-columns: 50px  50px 50px 50px 50px 50px 50px ; */
+            width: 51%;
+            
             
            }
            th,td{
             padding: 10px;
            }
        .formleft{
-        float: left;
-        width: 30%;
+        /* float:left;  */
+        display: inline-block;
+
+         width: 30%;
+        /* display: inline-block;   */
+                
        }
-       .formrright{
-        float: right;
-        width: 30%;
+       .formright{
+        /* float: right; */
+         width: 60%; 
+         display: inline-block;
+
+       }
+       
+     .Review{
+        display: grid;
+        grid-template-columns: auto  auto ;
+        background-color: rgb(236, 236, 236);
+        width: 100%;
         
-       }
-       .button{
+     }
+     .Revieww{
         float: right;
-        width: 60%;
-       }
+     }
+     #Record{
+        margin-top: 15px;
+     }
+     .button{
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+        justify-content: center;    
+
+     }
+     .buttons{
+        text-align: center;
+     }
+   
     </style>
 </head>
+<header> 
+    <div class="Review">
+    <form action="">
+        <select  name="Record" id="Record">
+            <option value="1">Record</option>
+            <option value="2">Record</option>
+            <option value="3">Record</option>
+            <option value="4">Record</option>
+          </select>
+    </form>
+    <form class="Revieww" action="">
+        <p>View: <select name="Review" id="Review">
+            <option value="5"> Review Order</option>
+        </select></p>
+    </form>
+    </div>
+</header>
 <body>
     <div id="allform">
     <div id="form">
@@ -82,41 +132,41 @@
             <th>Unit Price</th>
             <th>Quantity</th>
             <th>Discount</th>
-            <th>Product name</th>
-            <th>Product Supplier name</th>
+            <th>Product category name</th>
+            <th>Product Supplier company name</th>
             <th>Extended Price</th>
         
         </tr>
         <tr>
-            <td> grandma...</td>
+            <td> grandma's boysenberry Spread</td>
             <td> 25$</td>
             <td> 20</td>
             <td> 25.00%</td>
             <td> condiments</td>
-            <td> grandma kellys</td>
+            <td> grandma kellys Homestead</td>
             <td> 375.00$</td>
 
 
         </tr>
         <tr>
-            <td> grandma...</td>
-            <td> 25$</td>
+            <td> tofu</td>
+            <td> 23.25$</td>
             <td> 20</td>
             <td> 25.00%</td>
-            <td> condiments</td>
-            <td> grandma kellys</td>
-            <td> 375.00$</td>
+            <td> Produce</td>
+            <td> mayumi's</td>
+            <td> 348.00$</td>
 
 
         </tr>
         <tr>
-            <td> grandma...</td>
-            <td> 25$</td>
-            <td> 20</td>
+            <td> teatime choclate buiscuit</td>
+            <td> 9.20$</td>
+            <td> 10</td>
             <td> 25.00%</td>
-            <td> condiments</td>
+            <td> Speciality buiscuit,ltd</td>
             <td> grandma kellys</td>
-            <td> 375.00$</td>
+            <td> 69.00$</td>
 
 
         </tr>
@@ -128,18 +178,17 @@
     <form action="">
         <label for="sname"><b> ShipName: </b> </label>
         <input type="text" id="sname" name="sname" placeholder="Bon app'">
-       
         <br><br>
-            <label for="svia"><b> shipvia: </b> </label><br>
-            <input list="browsers">
-            <datalist id="browsers">
-                <option value="united package"></option>
-                <option value="united package"></option>
-                <option value="united package"></option>
-            </datalist>
+        <form action="">
+            <label for="svia"><b> shipvia: </b> </label>
+            <select name="svia" id="svia">
+                <option value="1">United Package</option>
+                <option value="2">United Package</option>
+                <option value="3">United Package</option>
+            </select>
             <br>
             <br><br>
-           
+           </form>
     </form>
   
 </div>
@@ -158,21 +207,22 @@
 </form>
 </div>
     <br>
+    <br>
     <hr>
     
-<footer id="footer">
+
+<br>
+<footer>
+<div class="buttons">
     <div class="button">
-        <button> ok</button>
-        <button> Delete</button>
-        <button> cancel</button>
+      <button class="w3-btn w3-black">ok</button>
+      <button class="w3-btn w3-teal">Delete</button>
+      <button class="w3-btn w3-border">Cancel</button>
     </div>
-
-    
-
+    </div>
 </footer>
-   
-
 
     
 </body>
+
 </html>
